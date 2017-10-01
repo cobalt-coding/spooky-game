@@ -20,7 +20,7 @@ public class CameraMove : MonoBehaviour {
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1.0f / smooth);
         mouseLook += smoothV;
 
-        mouseLook.y = Mathf.Clamp(mouseLook.y, -90f, 90f);
+        mouseLook.y = Mathf.Clamp(mouseLook.y, -89f, 89f);
 
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
         player.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, player.transform.up);
