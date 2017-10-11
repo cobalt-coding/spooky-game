@@ -26,7 +26,7 @@ public class CameraMove : MonoBehaviour {
         player.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, player.transform.up);
 
         if (Input.GetAxis("Vertical") != 0)
-            transform.position = new Vector3(transform.position.x, Mathf.Sin(Time.fixedTime * 15) / 10 + player.transform.position.y+0.8f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, Mathf.Sin(Time.fixedTime * 13) / 10 + player.transform.position.y+0.8f, transform.position.z);
     }
 
 
